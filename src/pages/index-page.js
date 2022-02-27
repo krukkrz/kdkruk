@@ -35,8 +35,11 @@ export const pageQuery = graphql`
         title
         bannerStrongText
         bannerText
-        image
-        bannerImage 
+        bannerImage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
   }
