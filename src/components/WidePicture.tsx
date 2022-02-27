@@ -1,7 +1,10 @@
 import * as React from "react"
+import {getSrc} from "gatsby-plugin-image";
 
-const WidePicture = () => (
-    <h1>Hello there</h1>
-)
+const WidePicture = ({image}) => {
+    const imageSource = getSrc(image) || image;
+
+    return <img src={imageSource} alt=''/>
+}
 
 export default WidePicture

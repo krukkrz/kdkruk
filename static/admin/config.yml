@@ -28,3 +28,4 @@ collections:
           }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
+          - { label: Banner image, name: bannerImage, widget: image }

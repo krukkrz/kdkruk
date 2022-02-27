@@ -10,6 +10,7 @@ const IndexPage = ({ data }) => {
   return (
       <IndexPageTemplate
           image={frontmatter.image}
+          bannerImage={frontmatter.bannerImage}
           title={frontmatter.title}
       />
   )
@@ -33,6 +34,11 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
+          }
+        }
+        bannerImage {
+          childImageSharp {
+            gatsbyImageData
           }
         }
       }

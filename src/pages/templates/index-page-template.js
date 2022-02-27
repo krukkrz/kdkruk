@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 import * as React from "react";
 import WidePicture from "../../components/WidePicture";
 
-const IndexPageTemplate = ({ image, title }) => {
+const IndexPageTemplate = ({ image, title, bannerImage }) => {
     const imageSource = getSrc(image) || image;
+    const bannerImageSource = getSrc(bannerImage) || bannerImage;
     return (
         <>
-            <WidePicture/>
+            <WidePicture image={bannerImageSource}/>
             <h1>{title}</h1>
             <img src={imageSource} alt=''/>
         </>

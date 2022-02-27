@@ -17,3 +17,4 @@ In order to edit a landing page you should work on the following files:
 - `static/admin/config.yml` where you can modify fields that are modifiable in CMS
 - `src/templates/index-page.js` where is a react component with a template for landing page
 - `src/pages/index.md` where you set up the default value of modifiable fields
+- `src/cms/preview-templates/IndexPagePreview.js` where you should update preview to pass properties to the template
