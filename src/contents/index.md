@@ -1,5 +1,5 @@
 ---
 templateKey: index-page
-title: Super fancy title!
-image: /img/icon.png
+title: This is going to be a KDKRUK website
+image: /img/dwight.jpg
 ---
