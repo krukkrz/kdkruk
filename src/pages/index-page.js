@@ -12,6 +12,8 @@ const IndexPage = ({ data }) => {
           image={frontmatter.image}
           bannerImage={frontmatter.bannerImage}
           title={frontmatter.title}
+          bannerStrongText={frontmatter.bannerStrongText}
+          bannerText={frontmatter.bannerText}
       />
   )
 }
@@ -31,16 +33,10 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-          }
-        }
-        bannerImage {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
+        bannerStrongText
+        bannerText
+        image
+        bannerImage 
       }
     }
   }

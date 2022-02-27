@@ -29,3 +29,5 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Banner image, name: bannerImage, widget: image }
+          - { label: Banner strong text, name: bannerStrongText, widget: string }
+          - { label: Banner text, name: bannerText, widget: string }

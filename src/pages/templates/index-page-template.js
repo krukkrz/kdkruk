@@ -1,17 +1,22 @@
 import {getSrc} from "gatsby-plugin-image";
 import PropTypes from "prop-types";
 import * as React from "react";
-import WidePicture from "../../components/WidePicture";
+import Layout from "../../components/layout/layout";
+import Banner from "../../components/Banner";
 
-const IndexPageTemplate = ({ image, title, bannerImage }) => {
+const IndexPageTemplate = ({ image, title, bannerImage, bannerStrongText, bannerText }) => {
     const imageSource = getSrc(image) || image;
     const bannerImageSource = getSrc(bannerImage) || bannerImage;
     return (
-        <>
-            <WidePicture image={bannerImageSource}/>
+        <Layout>
+            <Banner
+                image={bannerImageSource}
+                strongText={bannerStrongText}
+                text={bannerText}
+            />
             <h1>{title}</h1>
             <img src={imageSource} alt=''/>
-        </>
+        </Layout>
     );
 };
 
