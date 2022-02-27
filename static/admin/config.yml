@@ -13,10 +13,10 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "pages"
+  - name: "contents"
     label: "Pages"
     files:
-      - file: "src/pages/index.md"
+      - file: "src/contents/index.md"
         label: "Landing Page"
         name: "index"
         fields:

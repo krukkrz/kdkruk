@@ -1,23 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types";
-import { getSrc} from "gatsby-plugin-image";
 import { graphql } from "gatsby";
-
-
-export const IndexPageTemplate = ({ image, title }) => {
-  const imageSource = getSrc(image) || image;
-  return (
-    <>
-      <h1>{title}</h1>
-      <img src={imageSource} alt=''/>
-    </>
-);
-};
-
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-};
+import IndexPageTemplate from "./templates/index-page-template";
 
 // markup
 const IndexPage = ({ data }) => {
